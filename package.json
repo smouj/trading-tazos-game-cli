@@ -1,0 +1,57 @@
+{
+  "name": "@trading-tazos-game/cli",
+  "version": "1.0.0",
+  "description": "Official CLI for the Trading Tazos Game — search, battle, and manage your digital tazo collection from the terminal",
+  "license": "MIT",
+  "author": "Trading Tazos Game <support@medaclawarena.com>",
+  "homepage": "https://medaclawarena.com",
+  "repository": "github:smouj/trading-tazos-game-cli",
+  "bugs": "https://github.com/smouj/trading-tazos-game-cli/issues",
+  "keywords": [
+    "tazos",
+    "pogs",
+    "trading-card-game",
+    "cli",
+    "collectibles",
+    "pokemon",
+    "dragon-ball-z",
+    "digimon",
+    "nostalgia",
+    "retro-gaming",
+    "battle-game",
+    "collection-manager"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "tazos": "./dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "table": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
