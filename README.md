@@ -1,5 +1,9 @@
 # 🎴 @trading-tazos-game/cli
 
+<div align="center">
+
+<img src="./logo-complete-black.png" alt="Trading Tazos Game CLI" height="80" />
+
 > Official CLI for the **Trading Tazos Game** — search, battle, and manage your digital tazo collection from the terminal.
 
 [![npm version](https://img.shields.io/npm/v/@trading-tazos-game/cli)](https://www.npmjs.com/package/@trading-tazos-game/cli)
