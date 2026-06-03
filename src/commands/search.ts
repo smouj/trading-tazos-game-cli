@@ -7,7 +7,7 @@ export function searchCommand() {
   return new Command("search")
     .description("Search tazos by name or slug")
     .argument("[query]", "Search term (partial name, slug, or number)")
-    .option("-f, --franchise <slug>", "Filter by franchise (pokemon, digimon, dragon-ball-z)")
+    .option("-f, --franchise <slug>", "Filter by franchise (minimon, cybermon, dracobell)")
     .option("-r, --rarity <rarity>", "Filter by rarity (common, uncommon, rare, ultra, legendary)")
     .option("-s, --stats", "Show full 9-stat breakdown")
     .option("-l, --limit <n>", "Max results", "15")
