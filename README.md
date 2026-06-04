@@ -55,7 +55,7 @@ tazos battle --player 5 --opponent 5 --seed 42
 ```
 tazos search [query] [options]
 
-  -f, --franchise <slug>   Filter: pokemon, digimon, dragon-ball-z
+  -f, --franchise <slug>   Filter: minimon, dracobell, cybermon
   -r, --rarity <rarity>    Filter: common, uncommon, rare, ultra, legendary
   -s, --stats              Show full 9-stat breakdown
   -l, --limit <n>          Max results (default: 15)
@@ -87,7 +87,7 @@ Get your token by logging in at [medaclawarena.com](https://medaclawarena.com) a
 - 🎯 **9 Battle Stats** — Attack, Defense, Resistance, Weight, Stability, Spin, Control, Bounce, Precision
 - 🎲 **Deterministic Battles** — Seed-based RNG, same seed = same outcome every time
 - 📊 **Stat Bars** — ASCII bar charts for visual stat comparison
-- 🌈 **Franchise Colors** — Pokémon yellow, DBZ orange, Digimon cyan
+- 🌈 **Franchise Colors** — Minimon yellow, Dracobell orange, Cybermon cyan
 - ⭐ **Rarity Stars** — ★ common through ★★★★★ legendary
 - 🔄 **Reproducible** — Every battle can be replayed with `--seed`
 
