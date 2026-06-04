@@ -24,9 +24,9 @@ export const RARITY_STYLE: Record<string, { color: (s: string) => string; stars:
 }
 
 export const FRANCHISE_COLOR: Record<string, (s: string) => string> = {
-  pokemon: chalk.yellowBright,
-  "dragon-ball-z": chalk.redBright,
-  digimon: chalk.cyanBright,
+  minimon: chalk.yellowBright,
+  dracobell: chalk.redBright,
+  cybermon: chalk.cyanBright,
 }
 
 /** Draw a horizontal stat bar */

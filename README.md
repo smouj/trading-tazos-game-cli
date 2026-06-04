@@ -24,11 +24,11 @@ Requirements: **Node.js ≥ 18**
 ## Quick Start
 
 ```bash
-# Search your favorite tazo
-tazos search pikachu
+# Search a tazo
+tazos search bulbasaur
 
 # Get full battle stats
-tazos info charizard
+tazos info charizardé
 
 # See collection statistics
 tazos stats
@@ -55,7 +55,7 @@ tazos battle --player 5 --opponent 5 --seed 42
 ```
 tazos search [query] [options]
 
-  -f, --franchise <slug>   Filter: minimon, dracobell, cybermon
+  -f, --franchise <slug>   Filter: minimon, cybermon, dracobell
   -r, --rarity <rarity>    Filter: common, uncommon, rare, ultra, legendary
   -s, --stats              Show full 9-stat breakdown
   -l, --limit <n>          Max results (default: 15)
@@ -87,7 +87,7 @@ Get your token by logging in at [medaclawarena.com](https://medaclawarena.com) a
 - 🎯 **9 Battle Stats** — Attack, Defense, Resistance, Weight, Stability, Spin, Control, Bounce, Precision
 - 🎲 **Deterministic Battles** — Seed-based RNG, same seed = same outcome every time
 - 📊 **Stat Bars** — ASCII bar charts for visual stat comparison
-- 🌈 **Franchise Colors** — Minimon yellow, Dracobell orange, Cybermon cyan
+- 🌈 **Franchise Colors** — Minimon yellow, Dracobell orange/red, Cybermon cyan
 - ⭐ **Rarity Stars** — ★ common through ★★★★★ legendary
 - 🔄 **Reproducible** — Every battle can be replayed with `--seed`
 
