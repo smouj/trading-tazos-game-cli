@@ -80,7 +80,7 @@ Set your API token to access your personal collection:
 export TAZOS_AUTH_TOKEN="your-jwt-token"
 ```
 
-Get your token by logging in at [medaclawarena.com](https://medaclawarena.com) and copying it from localStorage (`ttg-token`).
+Get your token by logging in at [tradingtazosgame.com](https://tradingtazosgame.com) and copying it from localStorage (`ttg-token`).
 
 ## Features
 
@@ -93,7 +93,7 @@ Get your token by logging in at [medaclawarena.com](https://medaclawarena.com) a
 
 ## API
 
-The CLI connects to the public [Trading Tazos Game API](https://medaclawarena.com):
+The CLI connects to the public [Trading Tazos Game API](https://tradingtazosgame.com):
 
 - `GET /api/tazos` — Search, filter, sort tazos
 - `GET /api/stats` — Collection statistics
@@ -127,7 +127,7 @@ node dist/cli.js --help
 
 ## Related
 
-- [Trading Tazos Game](https://medaclawarena.com) — Play in your browser
+- [Trading Tazos Game](https://tradingtazosgame.com) — Play in your browser
 - [Main Repo](https://github.com/smouj/Trading-Tazos-Game) — Full-stack Next.js game
 - [npm Package](https://www.npmjs.com/package/@trading-tazos-game/cli)
 

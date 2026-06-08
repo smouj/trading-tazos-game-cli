@@ -21,7 +21,7 @@ ${chalk.dim("Examples:")}
   ${chalk.cyan("$ tazos top --stat attack")}       ${chalk.dim("Top 10 tazos by attack")}
   ${chalk.cyan("$ tazos battle --player 5")}       ${chalk.dim("Simulate a quick battle")}
 
-${chalk.dim("API:")}  https://medaclawarena.com
+${chalk.dim("API:")}  https://tradingtazosgame.com
 ${chalk.dim("Repo:")} https://github.com/smouj/trading-tazos-game-cli
 `)
 

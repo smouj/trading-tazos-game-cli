@@ -1,4 +1,4 @@
-const BASE_URL = process.env.TAZOS_API_URL || "https://medaclawarena.com"
+const BASE_URL = process.env.TAZOS_API_URL || "https://tradingtazosgame.com"
 const AUTH_TOKEN = process.env.TAZOS_AUTH_TOKEN || ""
 
 export interface Tazo {
