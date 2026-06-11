@@ -1,7 +1,7 @@
 import { Command } from "commander"
 import chalk from "chalk"
 import { api } from "../client.js"
-import { formatTazo, banner } from "../lib/format.js"
+import { banner } from "../lib/format.js"
 
 export function topCommand() {
   return new Command("top")

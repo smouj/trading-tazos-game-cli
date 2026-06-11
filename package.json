@@ -1,6 +1,6 @@
 {
   "name": "@trading-tazos-game/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official CLI for the Trading Tazos Game — search, battle, and manage your digital tazo collection from the terminal",
   "license": "MIT",
   "author": "Trading Tazos Game <support@tradingtazosgame.com>",
@@ -45,8 +45,11 @@
     "table": "^6.9.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
     "@types/node": "^22.0.0",
-    "typescript": "^5.8.0"
+    "eslint": "^9.39.4",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.61.0"
   },
   "engines": {
     "node": ">=18.0.0"

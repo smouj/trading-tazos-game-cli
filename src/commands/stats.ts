@@ -1,7 +1,7 @@
 import { Command } from "commander"
 import chalk from "chalk"
 import { api } from "../client.js"
-import { STAT_CONFIG, RARITY_STYLE, banner, fmt } from "../lib/format.js"
+import { RARITY_STYLE, banner, fmt } from "../lib/format.js"
 
 export function statsCommand() {
   return new Command("stats")

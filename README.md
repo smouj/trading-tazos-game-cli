@@ -25,10 +25,10 @@ Requirements: **Node.js ≥ 18**
 
 ```bash
 # Search a tazo
-tazos search bulbasaur
+tazos search lumipuff
 
 # Get full battle stats
-tazos info charizardé
+tazos info cipherion
 
 # See collection statistics
 tazos stats
@@ -98,6 +98,8 @@ The CLI connects to the public [Trading Tazos Game API](https://tradingtazosgame
 - `GET /api/tazos` — Search, filter, sort tazos
 - `GET /api/stats` — Collection statistics
 
+The live public API currently exposes verified published tazos only. Draft Season 1 tazos stay hidden until their art and metadata pass QA.
+
 Override the API base URL:
 
 ```bash
@@ -109,7 +111,7 @@ export TAZOS_API_URL="https://your-instance.com"
 ```typescript
 import { api } from "@trading-tazos-game/cli"
 
-const data = await api.search("pikachu")
+const data = await api.search("lumipuff")
 console.log(data.tazos[0].attack) // → 48
 ```
 

@@ -6,17 +6,18 @@ import { infoCommand } from "./commands/info.js"
 import { statsCommand } from "./commands/stats.js"
 import { battleCommand } from "./commands/battle.js"
 import { topCommand } from "./commands/top.js"
+import pkg from "../package.json" with { type: "json" }
 
 const program = new Command()
 
 program
   .name("tazos")
   .description(chalk.bold.yellow("🎴 Trading Tazos Game CLI") + chalk.dim(" — Manage your digital tazo collection from the terminal"))
-  .version("1.0.0")
+  .version(pkg.version)
   .addHelpText("after", `
 ${chalk.dim("Examples:")}
-  ${chalk.cyan("$ tazos search pikachu")}         ${chalk.dim("Search for tazos by name")}
-  ${chalk.cyan("$ tazos info bulbasaur")}          ${chalk.dim("Show detailed stats for a tazo")}
+  ${chalk.cyan("$ tazos search lumipuff")}        ${chalk.dim("Search for tazos by name")}
+  ${chalk.cyan("$ tazos info cipherion")}          ${chalk.dim("Show detailed stats for a tazo")}
   ${chalk.cyan("$ tazos stats")}                   ${chalk.dim("Show collection statistics")}
   ${chalk.cyan("$ tazos top --stat attack")}       ${chalk.dim("Top 10 tazos by attack")}
   ${chalk.cyan("$ tazos battle --player 5")}       ${chalk.dim("Simulate a quick battle")}
