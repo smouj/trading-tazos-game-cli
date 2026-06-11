@@ -5,7 +5,10 @@
   "license": "MIT",
   "author": "Trading Tazos Game <support@tradingtazosgame.com>",
   "homepage": "https://tradingtazosgame.com",
-  "repository": "github:smouj/trading-tazos-game-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smouj/trading-tazos-game-cli.git"
+  },
   "bugs": "https://github.com/smouj/trading-tazos-game-cli/issues",
   "keywords": [
     "tazos",
@@ -25,7 +28,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "tazos": "./dist/cli.js"
+    "tazos": "dist/cli.js"
   },
   "files": [
     "dist/",
