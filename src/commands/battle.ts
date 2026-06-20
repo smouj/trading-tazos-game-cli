@@ -2,6 +2,7 @@ import { Command } from "commander"
 import chalk from "chalk"
 import { api } from "../client.js"
 import { formatBattleCard, banner } from "../lib/format.js"
+import { DECK_SIZE, STARTING_HAND_SIZE, DRAW_PER_TURN } from "../lib/game-core.js"
 import type { Tazo } from "../client.js"
 
 /** Deterministic pseudo-random - same seed = same battle */
@@ -103,11 +104,20 @@ function simulateBattle(playerTazos: Tazo[], opponentTazos: Tazo[], seed: number
 
 export function battleCommand() {
   return new Command("battle")
-    .description("Simulate a battle between two teams of tazos")
-    .option("-p, --player <n>", "Player team size", "5")
-    .option("-o, --opponent <n>", "Opponent team size", "5")
+    .description(
+      `Simulate a battle between two teams of tazos ` +
+      `(official rules: ${DECK_SIZE}-card deck, ${STARTING_HAND_SIZE}-card starting hand, ${DRAW_PER_TURN} draw/turn)`
+    )
+    .option("-p, --player <n>", "Player team size (2-10)", "5")
+    .option("-o, --opponent <n>", "Opponent team size (2-10)", "5")
     .option("-s, --seed <n>", "Random seed for reproducible battles")
     .option("-f, --fast", "Skip detailed turn log")
+    .addHelpText("after", `
+${chalk.dim("Game Rules:")}
+  ${chalk.dim(`Official deck size:`)} ${chalk.bold(String(DECK_SIZE))}
+  ${chalk.dim(`Starting hand:  `)} ${chalk.bold(String(STARTING_HAND_SIZE))} cards
+  ${chalk.dim(`Draw per turn:  `)} ${chalk.bold(String(DRAW_PER_TURN))} card
+`)
     .action(async (opts) => {
       try {
         const pSize = Math.min(Math.max(parseInt(opts.player), 2), 10)

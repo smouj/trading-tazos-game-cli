@@ -6,6 +6,7 @@ import { infoCommand } from "./commands/info.js"
 import { statsCommand } from "./commands/stats.js"
 import { battleCommand } from "./commands/battle.js"
 import { topCommand } from "./commands/top.js"
+import { DECK_SIZE, STARTING_HAND_SIZE, DRAW_PER_TURN } from "./lib/game-core.js"
 import pkg from "../package.json" with { type: "json" }
 
 const program = new Command()
@@ -22,6 +23,7 @@ ${chalk.dim("Examples:")}
   ${chalk.cyan("$ tazos top --stat attack")}       ${chalk.dim("Top 10 tazos by attack")}
   ${chalk.cyan("$ tazos battle --player 5")}       ${chalk.dim("Simulate a quick battle")}
 
+${chalk.dim("Game Rules:")}  Deck ${DECK_SIZE} cards · Starting hand ${STARTING_HAND_SIZE} · Draw ${DRAW_PER_TURN}/turn
 ${chalk.dim("API:")}  https://tradingtazosgame.com
 ${chalk.dim("Repo:")} https://github.com/smouj/trading-tazos-game-cli
 `)
