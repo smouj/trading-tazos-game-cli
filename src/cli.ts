@@ -24,7 +24,7 @@ ${chalk.dim("Examples:")}
   ${chalk.cyan("$ tazos battle --player 5")}       ${chalk.dim("Simulate a quick battle")}
 
 ${chalk.dim("Game Rules:")}  Deck ${DECK_SIZE} cards · Starting hand ${STARTING_HAND_SIZE} · Draw ${DRAW_PER_TURN}/turn
-${chalk.dim("API:")}  https://tradingtazosgame.com
+${chalk.dim("API:")}  https://api.tradingtazosgame.com
 ${chalk.dim("Repo:")} https://github.com/smouj/trading-tazos-game-cli
 `)
 

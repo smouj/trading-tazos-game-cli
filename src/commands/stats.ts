@@ -14,9 +14,9 @@ export function statsCommand() {
         console.log("")
 
         // KPI cards
-        const completionPct = s.totalTazos > 0 ? ((s.ownedTazos / s.totalTazos) * 100).toFixed(1) : "0"
+        const completionPct = s.totalTazos > 0 ? (((s.ownedTazos ?? 0) / s.totalTazos) * 100).toFixed(1) : "0"
         console.log(`  ${chalk.bold("Total Tazos:")}       ${chalk.yellowBright(s.totalTazos)}`)
-        console.log(`  ${chalk.bold("Owned:")}             ${chalk.green(fmt(s.ownedTazos))}  (${completionPct}%)`)
+        console.log(`  ${chalk.bold("Owned:")}             ${chalk.green(fmt((s.ownedTazos ?? 0)))}  (${completionPct}%)`)
         console.log(`  ${chalk.bold("Franchises:")}        ${chalk.cyan(s.totalFranchises)}`)
         console.log(`  ${chalk.bold("Collections:")}       ${chalk.magenta(s.totalCollections)}`)
 
