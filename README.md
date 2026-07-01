@@ -3,7 +3,7 @@
 **Official CLI for the Trading Tazos Game** — search, battle, and explore 351 digital tazos from your terminal.
 
 [![npm](https://img.shields.io/npm/v/@trading-tazos-game/cli)](https://www.npmjs.com/package/@trading-tazos-game/cli)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: proprietary](https://img.shields.io/badge/License-proprietary-yellow.svg)](https://opensource.org/licenses/proprietary)
 
 ## Quick Start
 
@@ -132,4 +132,4 @@ npm start
 
 ## License
 
-MIT © Trading Tazos Game
+proprietary © Trading Tazos Game
