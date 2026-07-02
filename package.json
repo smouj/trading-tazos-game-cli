@@ -1,7 +1,7 @@
 {
   "name": "@trading-tazos-game/cli",
-  "version": "2.0.0",
-  "description": "Official CLI for the Trading Tazos Game \u2014 search, battle, and manage your digital tazo collection from the terminal",
+  "version": "2.0.1",
+  "description": "Official CLI for the Trading Tazos Game — search, battle, and manage your digital tazo collection from the terminal",
   "license": "UNLICENSED",
   "author": "Trading Tazos Game <support@tradingtazosgame.com>",
   "homepage": "https://tradingtazosgame.com",
